@@ -1,0 +1,12 @@
+.header__logo {
+  --_header-padding-top: 100px;
+  --_header-padding-bottom: 115px;
+  display: flex;
+  justify-content: center;
+  padding: var(--_header-padding-top) 0 var(--_header-padding-bottom);
+
+	@media (max-width: 768px) {
+    --_header-padding-top: 80px;
+    --_header-padding-bottom: 50px;
+  }
+}

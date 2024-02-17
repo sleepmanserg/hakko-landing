@@ -1,0 +1,24 @@
+.title {
+  font-family: var(--font-family-mont);
+  font-size: var(--font-size-extra-large);
+  letter-spacing: 0.05em;
+  font-weight: 300;
+  text-transform: uppercase;
+
+  &.title[data-fade-in-up]  {
+    animation-delay: 1.5s;
+  }
+}
+
+.subtitle {
+  font-family: var(--font-family-mont);
+  font-size: var(--font-size-xs);
+  color: var(--color-green);
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  letter-spacing: 0.2em;
+  font-weight: 600;
+  &.subtitle[data-fade-in-up]  {
+    animation-delay: 1.5s;
+  }
+}
