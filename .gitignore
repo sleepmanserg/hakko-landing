@@ -1,0 +1,10 @@
+/.idea/
+/vendor/
+/site/wp/
+/site/wp-content/mu-plugins/AWsite/lib/Artworking/
+/site/webpack-stats/
+/node_modules/
+/cache/
+/site/wp-content/themes/awsite/map.cfg
+/site/wp-content/uploads-webpc/*
+/site/wp-content/uploads/*
