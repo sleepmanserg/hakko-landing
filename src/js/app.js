@@ -1,6 +1,3 @@
-// Увімкнути/вимкнути FLS (Full Logging System) (в роботі)
-window['FLS'] = true;
-
 const scrollers = document.querySelectorAll(".scroller");
 
 // If a user hasn't opted in for recuded motion, then we add the animation
@@ -40,8 +37,6 @@ function addLoadedClass() {
 
 addLoadedClass();
 
-
-// Підключення основного файлу стилів
 import "../scss/style.scss";
 
 import "./files/script.js";
