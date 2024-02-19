@@ -46,6 +46,10 @@
   --_animation-duration: 20s;
 }
 
+.scroller[data-speed="medium"] {
+  --_animation-duration: 40s;
+}
+
 .scroller[data-speed="slow"] {
   --_animation-duration: 60s;
 }
@@ -71,6 +75,9 @@
   position: relative;
   overflow: hidden;
   background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   &::before {
     content: '';

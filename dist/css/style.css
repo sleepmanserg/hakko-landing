@@ -437,6 +437,9 @@ h6 {
 .scroller[data-speed=fast] {
   --_animation-duration: 20s
 }
+.scroller[data-speed=medium] {
+  --_animation-duration: 40s
+}
 .scroller[data-speed=slow] {
   --_animation-duration: 60s
 }
@@ -465,7 +468,10 @@ h6 {
   padding: 1rem 1.5rem;
   position: relative;
   overflow: hidden;
-  background-color: #fff
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center
 }
 .tag-list li::before {
   content: "";
