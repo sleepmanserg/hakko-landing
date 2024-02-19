@@ -50,6 +50,10 @@
   --_animation-duration: 60s;
 }
 
+.scroller[data-hover="true"] .scroller__inner {
+  animation-play-state: paused;
+}
+
 @keyframes scroll {
   to {
     transform: translate(calc(-50% - 0.5rem));

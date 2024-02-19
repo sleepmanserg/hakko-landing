@@ -5,6 +5,9 @@
     function addAnimation() {
         scrollers.forEach((scroller => {
             scroller.setAttribute("data-animated", true);
+            document.addEventListener("mouseover", (e => {
+                if (e.target.closest(".scroller")) scroller.setAttribute("data-hover", true); else scroller.removeAttribute("data-hover");
+            }));
             const scrollerInner = scroller.querySelector(".scroller__inner");
             const scrollerContent = Array.from(scrollerInner.children);
             scrollerContent.forEach((item => {

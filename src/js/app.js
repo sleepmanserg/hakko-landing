@@ -10,6 +10,14 @@ function addAnimation() {
     // add data-animated="true" to every `.scroller` on the page
     scroller.setAttribute("data-animated", true);
 
+    document.addEventListener("mouseover", (e) => {
+      if (e.target.closest(".scroller")) {
+        scroller.setAttribute("data-hover", true);
+      } else {
+        scroller.removeAttribute("data-hover");
+      }
+    });
+
     // Make an array from the elements within `.scroller-inner`
     const scrollerInner = scroller.querySelector(".scroller__inner");
     const scrollerContent = Array.from(scrollerInner.children);
